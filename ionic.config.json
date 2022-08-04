@@ -1,0 +1,7 @@
+{
+  "name": "LN Sissali",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
