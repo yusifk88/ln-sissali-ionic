@@ -1,7 +1,7 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar >
+    <ion-header mode="ios" :translucent="true">
+      <ion-toolbar>
         <ion-buttons slot="start">
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
@@ -27,7 +27,7 @@
         <ion-row>
           <ion-col size="4" v-for="menu in menus" :key="menu.title">
 
-            <ion-card mode="ios" @click="getRoute(menu.route)" style="margin: 0;" :router-link="menu.route">
+            <ion-card  mode="ios" @click="getRoute(menu.route)" style="margin: 0; box-shadow: none !important; border-radius: 15px;" :router-link="menu.route">
               <ion-card-content  class="ion-text-center ion-color-tertiary" style="padding: 8px !important;">
                 <img style="height: 60px;" :src="menu.icon">
                 <ion-card-header style="color: #2e86ab !important; margin: 0 !important; padding: 0 !important;">

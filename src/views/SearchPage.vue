@@ -1,7 +1,7 @@
 <template>
   <ion-page>
 
-    <ion-header :translucent="true">
+    <ion-header mode="ios" :translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-back-button color="primary" defaultHref="/"></ion-back-button>

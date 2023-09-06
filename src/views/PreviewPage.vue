@@ -1,7 +1,7 @@
 <template>
   <ion-page>
 
-    <ion-header :translucent="true">
+    <ion-header mode="ios" :translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-back-button defaultHref="/"></ion-back-button>
@@ -28,7 +28,7 @@
              <h2>{{item.sissali}}</h2>
               <ion-row>
                 <ion-col size="6">
-                  <play-button></play-button>
+                  <play-button :word="item.english" :category="selectedItem.title.toLowerCase()" ></play-button>
                 </ion-col>
                   <ion-col size="6">
 

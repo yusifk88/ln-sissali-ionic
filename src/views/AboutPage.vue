@@ -18,7 +18,7 @@
       </ion-header>
 
       <div id="container">
-       <ion-card mode="ios">
+       <ion-card mode="ios" style="box-shadow: none !important; border-radius: 15px;">
          <ion-card-title>
 
          </ion-card-title>
@@ -29,7 +29,7 @@
          </ion-card-content>
        </ion-card>
 
-             <ion-card mode="ios">
+             <ion-card mode="ios" style="box-shadow: none !important; border-radius: 15px;">
                <ion-card-header>
                  <ion-card-title>
                    What it is.
@@ -42,7 +42,7 @@
          </ion-card-content>
        </ion-card>
 
-             <ion-card mode="ios">
+             <ion-card mode="ios" style="box-shadow: none !important; border-radius: 15px;">
                <ion-card-header>
                  <ion-card-title>
                    What it is NOT.
@@ -61,7 +61,7 @@
 
           </ion-label>
         </ion-item>
-             <ion-card v-for="person in people" :key="person.photo_url" mode="ios">
+             <ion-card style="box-shadow: none !important; border-radius: 15px;" v-for="person in people" :key="person.photo_url" mode="ios">
                <img :alt="person.name" :src="person.photo_url">
                <ion-card-header>
                  <ion-card-title>
@@ -81,7 +81,7 @@
            Other Contributors
           </ion-label>
         </ion-item>
-             <ion-card v-for="person in others" :key="person.name" mode="ios">
+             <ion-card style="box-shadow: none !important; border-radius: 15px;" v-for="person in others" :key="person.name" mode="ios">
                <ion-card-header>
                  <ion-card-subtitle>
                   {{person.name}}
@@ -179,15 +179,12 @@ export default defineComponent({
       others:[
         {
           name:"Sanda Kodimah"
-        },
-        {
-          name:"Smart Adusei(MK Studios)"
         }
       ],
       referenceMeterials:[
         {
           name:"Sissali Dictionary",
-          author:"Mr. Moses Luri"
+          author:"Hon. Moses Luri"
         }
       ]
     }
