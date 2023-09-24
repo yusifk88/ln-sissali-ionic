@@ -223,8 +223,8 @@
         "favurite": false
       },
       {
-        "english": "I don't understand",
-        "sissali": "mi bi tia sia",
+        "english": "Don't you understand?",
+        "sissali": "ŋ bi tia sia?",
         "audio_link": "",
         "favurite": false
       },
@@ -295,12 +295,6 @@
         "favurite": false
       },
 
-      {
-        "english": "You are welcome",
-        "sissali": "Ani ŋ lɔliŋ",
-        "audio_link": "",
-        "favurite": false
-      },
       {
         "english": "My pleasure",
         "sissali": "Mi tuɔtɔriŋ lɛ",
@@ -485,7 +479,7 @@
       },
       {
         "english": "What is happening now?",
-        "sissali": "Bɛ ni vɛŋ lɛlɛ",
+        "sissali": "Bɛ ni ŋaa lɛlɛ",
         "audio_link": "",
         "favurite": false
       },
@@ -965,12 +959,6 @@
         "favurite": false
       },
       {
-        "english": "Half an hour",
-        "sissali": "Biŋbelimiŋ lebi",
-        "audio_link": "",
-        "favurite": false
-      },
-      {
         "english": "5 minutes",
         "sissali": "Minte banɔŋ",
         "audio_link": "",
@@ -1128,13 +1116,13 @@
       },
       {
         "english": "Sunday",
-        "sissali": "Laadi",
+        "sissali": "Alaadi",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Which month are we in?",
-        "sissali": "Chɛŋ bɛ lɛ ni la hɛ?",
+        "sissali": "Chɛŋ bɛ tuoŋ ni la hɛ?",
         "audio_link": "",
         "favurite": false
       },
@@ -1758,14 +1746,14 @@
     "items": [
       {
         "english": "Hotel",
-        "sissali": "Nihuara dia",
+        "sissali": "Nihuare-dia",
         "audio_link": "",
         "favurite": false
       },
 
       {
         "english": "Guesthouse",
-        "sissali": "Nihuara dia",
+        "sissali": "Nihuare-dia",
         "audio_link": "",
         "favurite": false
       },
@@ -1872,7 +1860,7 @@
       },
       {
         "english": "What time is the checkout?",
-        "sissali": "Bua bɛ lɛ nɛ ŋ lii?",
+        "sissali": "Bua bɛ lɛ nɛ mi jaŋ lii?",
         "audio_link": "",
         "favurite": false
       },
@@ -2285,7 +2273,7 @@
 
       {
         "english": "I'm hungry",
-        "sissali": "Losiŋ ni kɛŋ mi",
+        "sissali": "Losiŋ kɛŋ mi nɛ",
         "audio_link": "",
         "favurite": false
       },
@@ -2409,7 +2397,7 @@
       },
       {
         "english": "Is service charge included?",
-        "sissali": "Tiŋtiŋaa chaaji pɛ nɛ?",
+        "sissali": "Tiŋtiŋaa chimiŋ pɛ nɛ?",
         "audio_link": "",
         "favurite": false
       },
@@ -2569,7 +2557,7 @@
       },
       {
         "english": "Cash",
-        "sissali": "Moriwiŋ",
+        "sissali": "Moribiŋ",
         "audio_link": "",
         "favurite": false
       },
@@ -2721,12 +2709,6 @@
       {
         "english": "Hat",
         "sissali": "Nyuŋ chugulo",
-        "audio_link": "",
-        "favurite": false
-      },
-      {
-        "english": "Dress",
-        "sissali": "Gɛriŋ",
         "audio_link": "",
         "favurite": false
       },
@@ -2925,7 +2907,7 @@
       },
       {
         "english": "Handbag",
-        "sissali": "Lɔkɔ-wie",
+        "sissali": "Lɔkɔ-bie",
         "audio_link": "",
         "favurite": false
       },
