@@ -1482,7 +1482,7 @@
       },
       {
         "english": "Police station",
-        "sissali": "",
+        "sissali": "Gari-bisiŋ dia",
         "audio_link": "",
         "favurite": false
       },
@@ -1567,22 +1567,8 @@
     "title": "Transportation",
     "tag": "transportation",
     "items": [
-
       {
-        "english": "Where do I buy ticket?",
-        "sissali": "Nia ni mi jaŋ yor tikiti",
-        "audio_link": "",
-        "favurite": false
-      },
-      {
-        "english": "One-way",
-        "sissali": "woŋbiiŋ bala",
-        "audio_link": "",
-        "favurite": false
-      },
-
-      {
-        "english": "Does stop at..?",
+        "english": "Does it stop at..?",
         "sissali": "U jaŋ chiŋ...?",
         "audio_link": "",
         "favurite": false
@@ -1594,19 +1580,6 @@
         "favurite": false
       },
 
-
-      {
-        "english": "Dining section",
-        "sissali": "Le la ba si di kia",
-        "audio_link": "",
-        "favurite": false
-      },
-      {
-        "english": "Sleeping section",
-        "sissali": "Di piniŋ",
-        "audio_link": "",
-        "favurite": false
-      },
       {
         "english": "Bus",
         "sissali": "Lori",

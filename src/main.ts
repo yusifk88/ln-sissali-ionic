@@ -1,8 +1,11 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router';
 
-import { IonicVue } from '@ionic/vue';
+// @ts-ignore
+import { RecycleScroller } from 'vue3-virtual-scroller'
+
+import {IonicVue} from '@ionic/vue';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
@@ -23,10 +26,12 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css';
+
 const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
-  
+    .use(IonicVue)
+    .use(router)
+    .component('RecycleScroller', RecycleScroller);
+
 router.isReady().then(() => {
-  app.mount('#app');
+    app.mount('#app');
 });

@@ -27,7 +27,8 @@
     "ionicons": "^6.0.2",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12",
-    "vue-virtual-scroller": "^2.0.0-alpha.1"
+    "vue-virtual-scroller": "^2.0.0-alpha.1",
+    "vue3-virtual-scroller": "^0.2.3"
   },
   "devDependencies": {
     "@capacitor/cli": "4.0.1",

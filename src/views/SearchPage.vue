@@ -10,7 +10,9 @@
 
       </ion-toolbar>
       <ion-toolbar>
-        <ion-searchbar @ionClear="cleared" debounce="800" v-model="keyword" @ionChange="doSearch" :autofocus="true" placeholder="Search..." mode="ios" cancelButtonIcon="backButtonIcon" :animated="true" autocomplete="search"></ion-searchbar>
+        <ion-searchbar @ionClear="cleared" debounce="800" v-model="keyword" @ionChange="doSearch" :autofocus="true"
+                       placeholder="Search..." mode="ios" cancelButtonIcon="backButtonIcon" :animated="true"
+                       autocomplete="search"></ion-searchbar>
 
       </ion-toolbar>
 
@@ -18,33 +20,38 @@
 
     <ion-content :fullscreen="true">
 
-      <div  id="container">
-
-
-
+      <div id="container">
 
         <ion-accordion-group>
-          <ion-accordion color="light" v-for="(item,i) in filtered" :key="i" :value="'item_'+i">
-            <ion-item slot="header">
-              <ion-label>{{item.english}}</ion-label>
-            </ion-item>
-            <div style="color: #2e86ab !important;" class="ion-padding" slot="content">
-              <h2>{{item.sissali}}</h2>
-              <ion-row>
-                <ion-col size="6">
-                  <play-button></play-button>
-                </ion-col>
-                <ion-col size="6">
 
-                  <copy-button :contents="item.sissali"></copy-button>
-                </ion-col>
+          <RecycleScroller
+              class="scroller"
+              :items="filteredLst"
+              :item-size="100"
+              key-field="english"
+              v-slot="{ item }"
+          >
+            <ion-accordion color="light" :key="i" :value="'item_'+i">
+              <ion-item slot="header">
+                <ion-label>{{ item.english }}</ion-label>
+              </ion-item>
+              <div style="color: #2e86ab !important;" class="ion-padding" slot="content">
+                <h2>{{ item.sissali }}</h2>
+                <ion-row>
+                  <ion-col size="6">
+                    <play-button></play-button>
+                  </ion-col>
+                  <ion-col size="6">
 
-              </ion-row>
-            </div>
-          </ion-accordion>
+                    <copy-button :contents="item.sissali"></copy-button>
+                  </ion-col>
 
+                </ion-row>
+              </div>
+            </ion-accordion>
+
+          </RecycleScroller>
         </ion-accordion-group>
-
 
 
       </div>
@@ -95,34 +102,35 @@ export default {
 
 
   },
-  data(){
-    return{
-      allList:require("../assets/categories.json"),
-      keyword:"",
-      filtered:[]
+  data() {
+    return {
+      allList: require("../assets/all.json"),
+      keyword: "",
+      filtered: []
     }
   },
-  computed:{
-    getAll(){
-      let list=[];
-      this.allList.forEach(item=>{
-        item.items.forEach(subitem=>{
-          list.push(subitem);
-        })
+  computed: {
 
-      });
-      return list;
+    filteredLst() {
 
+      if (!this.keyword) {
+
+        return this.allList;
+      }
+
+      return this.allList.filter(item => {
+        return item.english.toLowerCase().includes(this.keyword);
+      })
 
     }
   },
-  methods:{
-    cleared(){
-      this.filtered=this.getAll;
+  methods: {
+    cleared() {
+      this.filtered = this.getAll;
 
     },
-    doSearch(){
-      this.filtered=this.getAll.filter(item=>item.english.toLowerCase().includes(this.keyword.toLowerCase()));
+    doSearch() {
+      this.filtered = this.getAll.filter(item => item.english.toLowerCase().includes(this.keyword.toLowerCase()));
     }
 
   },
