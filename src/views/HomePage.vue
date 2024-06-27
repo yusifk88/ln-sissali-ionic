@@ -6,11 +6,11 @@
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
         <ion-title>LN Sissali</ion-title>
-        <ion-buttons slot="end">
-          <ion-button color="primary" router-link="/search">
-            <ion-icon :ios="searchOutline" :md="searchOutline" :name="searchOutline" slot="icon-only"></ion-icon>
-          </ion-button>
-        </ion-buttons>
+<!--        <ion-buttons slot="end">-->
+<!--          <ion-button color="primary" router-link="/search">-->
+<!--            <ion-icon :ios="searchOutline" :md="searchOutline" :name="searchOutline" slot="icon-only"></ion-icon>-->
+<!--          </ion-button>-->
+<!--        </ion-buttons>-->
       </ion-toolbar>
     </ion-header>
 
@@ -59,7 +59,6 @@ import {
     IonCard,
     IonCardContent,
     IonCardHeader,
-    IonButton
 } from '@ionic/vue';
 import {accessibilityOutline,searchOutline} from 'ionicons/icons';
 
@@ -79,7 +78,6 @@ export default defineComponent({
     IonCard,
     IonCardContent,
     IonCardHeader,
-    IonButton
 
   },
   data() {
