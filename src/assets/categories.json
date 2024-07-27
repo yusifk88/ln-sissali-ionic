@@ -604,7 +604,7 @@
     "tag": "numbers",
     "items": [
       {
-        "english": "zero",
+        "english": "Zero",
         "sissali": "Kun Tuo",
         "audio_link": "",
         "favurite": false
@@ -671,31 +671,31 @@
       },
       {
         "english": "Eleven",
-        "sissali": "FiDiaŋ",
+        "sissali": "Fi-diaŋ",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Twelve",
-        "sissali": "Filia",
+        "sissali": "Fi-lia",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Thirteen",
-        "sissali": "Fitore",
+        "sissali": "Fi-tore",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Fourteen",
-        "sissali": "Finasi",
+        "sissali": "Fi-nasi",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Fifteen",
-        "sissali": "Finɔŋ",
+        "sissali": "Fi-nɔŋ",
         "audio_link": "",
         "favurite": false
       },
@@ -707,19 +707,19 @@
       },
       {
         "english": "Seventeen",
-        "sissali": "FiPɛ",
+        "sissali": "Fi-Pɛ",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Eighteen",
-        "sissali": "Fichore",
+        "sissali": "Fi-chore",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Nineteen",
-        "sissali": "Finiwi",
+        "sissali": "Fi-niwi",
         "audio_link": "",
         "favurite": false
       },
@@ -1599,7 +1599,7 @@
         "favurite": false
       },
       {
-        "english": "what is the next stop?",
+        "english": "What is the next stop?",
         "sissali": "Nia nɛ la jaŋ bra chiŋ?",
         "audio_link": "",
         "favurite": false
@@ -1626,7 +1626,7 @@
 
       {
         "english": "Car",
-        "sissali": "Loriwie",
+        "sissali": "Loribie",
         "audio_link": "",
         "favurite": false
       },
@@ -1733,7 +1733,7 @@
 
       {
         "english": "Bed and breakfast",
-        "sissali": "Dipiniŋ ani Neebiŋliŋ",
+        "sissali": "Dipiniŋ ni Neebiŋliŋ",
         "audio_link": "",
         "favurite": false
       },
@@ -2730,7 +2730,7 @@
       },
       {
         "english": "Swimwear",
-        "sissali": "Lii fori gɛniŋ",
+        "sissali": "Lii fori gɛriŋ",
         "audio_link": "",
         "favurite": false
       },
@@ -3136,12 +3136,6 @@
         "favurite": false
       },
       {
-        "english": "Hunter",
-        "sissali": "Naŋbakli",
-        "audio_link": "",
-        "favurite": false
-      },
-      {
         "english": "Hunters",
         "sissali": "Naŋbakla",
         "audio_link": "",
@@ -3289,25 +3283,25 @@
       },
       {
         "english": "Uncle",
-        "sissali": "Niara/Nyima Kuwie",
+        "sissali": "Niara",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Aunt",
-        "sissali": "Nyilma/Naaŋ Kuwie",
+        "sissali": "Nyilma",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Nephew",
-        "sissali": "ŋaana bie/Malma bie",
+        "sissali": "Malma bie",
         "audio_link": "",
         "favurite": false
       },
       {
         "english": "Niece",
-        "sissali": "ŋaana bie/Malma bie",
+        "sissali": "ŋaana bie",
         "audio_link": "",
         "favurite": false
       },
@@ -3351,12 +3345,6 @@
       {
         "english": "Stepchild",
         "sissali": "Hadɔŋɔ Bie",
-        "audio_link": "",
-        "favurite": false
-      },
-      {
-        "english": "Stepparent",
-        "sissali": "Naaŋ Hadɔŋɔ/Nyiŋma Badɔŋɔ",
         "audio_link": "",
         "favurite": false
       },

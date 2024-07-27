@@ -1,12 +1,12 @@
 <template>
   <ion-page>
 
-    <ion-header :translucent="true">
+    <ion-header collapse="fade" :translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-back-button defaultHref="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>About LN Sissali</ion-title>
+        <ion-title>About LN Sisaali</ion-title>
       </ion-toolbar>
     </ion-header>
 

@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
-        <ion-title>LN Sissali</ion-title>
+        <ion-title>LN Sisaali</ion-title>
 <!--        <ion-buttons slot="end">-->
 <!--          <ion-button color="primary" router-link="/search">-->
 <!--            <ion-icon :ios="searchOutline" :md="searchOutline" :name="searchOutline" slot="icon-only"></ion-icon>-->

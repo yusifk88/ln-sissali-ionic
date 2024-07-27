@@ -1,71 +1,64 @@
 <template>
   <ion-app>
-    <ion-split-pane content-id="main-content">
+    <ion-page>
+      <ion-tabs>
+        <ion-router-outlet id="main-content"></ion-router-outlet>
 
-      <ion-menu content-id="main-content" type="overlay">
-        <ion-card color="primary" style="height: 200px; margin: 0 !important; border-radius: 0!important; box-shadow: none !important;">
-          <ion-card-content >
-            <ion-card-title class="ion-text-center ion-padding-vertical ion-margin-vertical">LN SISSALI</ion-card-title>
-            <ion-card-subtitle class="ion-text-center">Guŋni ŋ Yikoro!</ion-card-subtitle>
-          </ion-card-content>
-        </ion-card>
-        <ion-content>
-          <ion-list id="inbox-list">
-            <ion-menu-toggle auto-hide="false" v-for="(p, i) in appPages" :key="i">
-              <ion-item  router-direction="root" :router-link="p.url" lines="none"
-                        detail="false" class="hydrated">
-                <ion-icon slot="start" :ios="p.iosIcon" :md="p.mdIcon" :name="p.iosIcon"></ion-icon>
-                <ion-label>{{ p.title }}</ion-label>
-              </ion-item>
-            </ion-menu-toggle>
-          </ion-list>
-        </ion-content>
-      </ion-menu>
-      <ion-router-outlet id="main-content"></ion-router-outlet>
-    </ion-split-pane>
+        <ion-tab-bar>
+          <ion-tab-button tab="home" href="/">
+            <ion-icon :icon="homeOutline"/>
+            <ion-label>Home</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="places" href="/places">
+            <ion-icon :icon="locationOutline"/>
+            <ion-label>Places</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="about" href="/about">
+            <ion-icon :icon="informationCircleOutline"/>
+            <ion-label>About</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-page>
   </ion-app>
 </template>
 
 <script lang="ts">
 import {
-  IonCardTitle,
-    IonCardSubtitle,
+
   IonApp,
-  IonContent,
   IonIcon,
-  IonItem,
   IonLabel,
-  IonList,
-  IonMenu,
-  IonMenuToggle,
+
   IonRouterOutlet,
-  IonSplitPane,
-  IonCard,
-    IonCardContent
+
+  IonTabs,
+  IonTabBar,
+  IonPage,
+  IonTabButton
 } from '@ionic/vue';
 import {defineComponent, ref} from 'vue';
 import {useRoute} from 'vue-router';
 import {
-  informationCircleOutline
+  homeOutline,locationOutline,informationCircleOutline
 } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'App',
   components: {
-    IonCardTitle,
-    IonCardSubtitle,
-    IonCardContent,
-    IonCard,
+
     IonApp,
-    IonContent,
+
     IonIcon,
-    IonItem,
     IonLabel,
-    IonList,
-    IonMenu,
-    IonMenuToggle,
+
     IonRouterOutlet,
-    IonSplitPane,
+    IonTabs,
+    IonTabBar,
+    IonPage,
+    IonTabButton
   },
   setup() {
     const selectedIndex = ref(0);
@@ -88,10 +81,12 @@ export default defineComponent({
     return {
 
       appPages,
-      informationCircleOutline,
+      homeOutline,locationOutline,informationCircleOutline,
 
-      isSelected: (url: string) => url === route.path ? 'selected' : ''
-    }
+      isSelected
+  :
+    (url: string) => url === route.path ? 'selected' : ''
+  }
   }
 });
 </script>
