@@ -2,15 +2,15 @@
   <ion-app>
     <ion-page>
       <ion-tabs>
-        <ion-router-outlet id="main-content"></ion-router-outlet>
+        <ion-router-outlet></ion-router-outlet>
 
-        <ion-tab-bar>
+        <ion-tab-bar selectedTab="places" :translucent="true" slot="bottom">
           <ion-tab-button tab="home" href="/">
             <ion-icon :icon="homeOutline"/>
             <ion-label>Home</ion-label>
           </ion-tab-button>
 
-          <ion-tab-button tab="places" href="/places">
+          <ion-tab-button :selected="true" tab="places" href="/places">
             <ion-icon :icon="locationOutline"/>
             <ion-label>Places</ion-label>
           </ion-tab-button>
@@ -31,9 +31,7 @@ import {
   IonApp,
   IonIcon,
   IonLabel,
-
   IonRouterOutlet,
-
   IonTabs,
   IonTabBar,
   IonPage,
@@ -83,9 +81,7 @@ export default defineComponent({
       appPages,
       homeOutline,locationOutline,informationCircleOutline,
 
-      isSelected
-  :
-    (url: string) => url === route.path ? 'selected' : ''
+      isSelected: (url: string) => url === route.path ? 'selected' : ''
   }
   }
 });

@@ -179,6 +179,12 @@ export default defineComponent({
       others:[
         {
           name:"Sanda Kodimah"
+        },
+        {
+          name:"Aliu Wahab"
+        },
+        {
+          name:"Alhassan Fatimah"
         }
       ],
       referenceMeterials:[

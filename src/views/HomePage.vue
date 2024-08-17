@@ -17,7 +17,7 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">LN Sissali</ion-title>
+          <ion-title size="large">LN Sisaali</ion-title>
         </ion-toolbar>
       </ion-header>
 

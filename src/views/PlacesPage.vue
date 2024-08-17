@@ -10,6 +10,17 @@
     </ion-header>
 
     <ion-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Coming soon...</ion-card-title>
+          <ion-card-subtitle>Places will be live soon</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>
+            Places is a feature that will contain landmarks in the Sissala area, including 360 panoramas giving you a tunnel vision back home in an immersive way.
+          </p>
+        </ion-card-content>
+      </ion-card>
 
       <place-card-component
           v-for="(place,index) in places"
@@ -18,35 +29,24 @@
           :index="index"
       ></place-card-component>
 
+
     </ion-content>
 
   </ion-page>
 </template>
 <script lang="ts">
-import {IonPage, IonHeader, IonToolbar, IonTitle, IonBackButton, IonButtons, IonContent} from "@ionic/vue";
+import {IonPage, IonHeader, IonToolbar, IonTitle, IonBackButton, IonButtons, IonContent,IonCard,IonCardContent,IonCardTitle,IonCardSubtitle} from "@ionic/vue";
 import {defineComponent} from 'vue'
 import PlaceCardComponent from "@/Components/PlaceCardComponent.vue";
 
 export default defineComponent({
   name: "PlacesPage",
-  components: {PlaceCardComponent, IonButtons, IonBackButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent},
+  components: {PlaceCardComponent, IonButtons, IonBackButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonCard,IonCardContent,IonCardTitle,IonCardSubtitle},
   data() {
     return {
       places: [
 
         {
-          name: "Iconic Brain Multimedia",
-          by: "Harun Kuri",
-          location: {
-            town: "Tumu",
-            region: "Upper West Region",
-            district: "Sissala East Municipal"
-          },
-          panaromaURL: '/assets/places/place1.jpg',
-          featuredPhoto: "/assets/places/place1.jpg",
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
-        , {
           name: "Great Fingers Volleyball Court",
           by: "Yusif Katulie",
           location: {
@@ -56,19 +56,7 @@ export default defineComponent({
           },
           panaromaURL: '/assets/places/place2.jpg',
           featuredPhoto: "/assets/places/place2.jpg",
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
-        , {
-          name: "Tumu Chief Palace",
-          by: "Harun Kuri",
-          location: {
-            town: "Tumu",
-            region: "Upper West Region",
-            district: "Sissala East Municipal"
-          },
-          panaromaURL: '/assets/places/place3.jpg',
-          featuredPhoto: "/assets/places/place3.jpg",
-          description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          description: "Sample place"
         }
 
       ]

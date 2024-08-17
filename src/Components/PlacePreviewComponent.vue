@@ -19,7 +19,7 @@
 </ion-card>
 </template>
 
-<script lang="ts">
+<script >
 import {defineComponent} from 'vue'
 import {IonCard,IonCardContent,IonCardTitle,IonCardSubtitle,IonCardHeader} from "@ionic/vue";
 import { Viewer } from '@photo-sphere-viewer/core';
